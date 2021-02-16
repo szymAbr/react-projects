@@ -18,7 +18,7 @@ class App extends React.Component {
         this.handleTotal = this.handleTotal.bind(this)
     }
 
-    handleChange(id) {
+    handleChange(id) { // checkbox checked/unchecked
         this.setState(prevState => {
             const updatedGiftData = prevState.gifts.map(present => {
                 if (present.id === id) {
@@ -32,7 +32,7 @@ class App extends React.Component {
         })
     }
 
-    handleTotal() {
+    handleTotal() { // updating total amount needed
         function getTotal(total, val) {
             return total + val
         }
@@ -54,7 +54,7 @@ class App extends React.Component {
 
     }
 
-    handleBudget(event) {
+    handleBudget(event) { // show user's budget on input
         this.setState({
             money: event.target.value
         })
@@ -80,43 +80,3 @@ class App extends React.Component {
 }
 
 export default App
-
-// import React from "react"
-// import todosData from "./todosData"
-// import TodoItem from "./TodoItem"
-
-// class App extends React.Component {
-//     constructor() {
-//         super()
-//         this.state = {
-//             todos: todosData
-//         }
-//         this.handleChange = this.handleChange.bind(this)
-//     }
-
-//     handleChange(id) {
-//         this.setState(prevState => {
-//             const updatedData = prevState.todos.map(todo => {
-//                 if (todo.id === id) {
-//                     todo.completed = !todo.completed
-//                 }
-//                 return todo
-//             })
-//             return {
-//                 todos: updatedData
-//             }
-//         })
-//     }
-
-//     render() {
-//         const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange} />)
-
-//         return (
-//             <div className="todo-list">
-//                 {todoItems}
-//             </div>
-//         )
-//     }
-// }
-
-// export default App
