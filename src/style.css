@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap");
+
+body {
+    background-color: #f9f2ec;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.header {
+    margin: auto;
+    max-width: 65%;
+}
+
+.header-budget {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h1, h3 {
+    margin-top: 5%;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 44px;
+    position: relative;
+    margin: auto;
+    margin-top: 2.5%;
+}
+
+h4 {
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.deco-1 {
+    max-width: 15%;
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+    transform: scaleX(-1);
+    position: fixed;
+    top: 0;
+    left: 5%;    
+}
+  
+.deco-2 {
+    max-width: 15%;
+    height: auto;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    right: 5%;    
+}
+
+.container {
+    position: relative;
+}
+
+.gift-list {
+    /* position: absolute; */
+    display: block;
+    column-count: 2;
+    max-width: 25%;
+    margin: auto;
+    text-align: left;
+    border-style: groove;
+    border-color: tomato;
+    border-width: 1em;
+    padding: 2%;
+    padding-right: 0.5%;
+    padding-left: 4%;
+    min-width: 22em;
+    left: 25%;
+    right: 25%;
+    font-size: 80%;
+}
+
+.gift-item {
+    padding: 2%;
+}
+
+.result {
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-top: 2%;
+    right: 25%;
+    left: 25%;
+    max-width: 20em;
+}
+
+
+
+
+
+
+
+
+/* body {
+    background-color: whitesmoke;
+}
+
+.todo-list {
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+    box-shadow: */
+    /* The top layer shadow */
+        /* 0 1px 1px rgba(0,0,0,0.15), */
+            /* The second layer */
+        /* 0 10px 0 -5px #eee, */
+            /* The second layer shadow */
+        /* 0 10px 1px -4px rgba(0,0,0,0.15), */
+            /* The third layer */
+        /* 0 20px 0 -10px #eee, */
+            /* The third layer shadow */
+        /* 0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px 0;
+    width: 70%;
+    border-bottom: 1px solid #cecece;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: #333333;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+    outline: 0;
+} */
