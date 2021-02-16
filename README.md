@@ -1,3 +1,9 @@
+# Christmas Shopping Calculator in React!
+
+This is my first project written in React.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
