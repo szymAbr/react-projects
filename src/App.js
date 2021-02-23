@@ -22,7 +22,10 @@ class App extends React.Component {
         this.setState(prevState => {
             const updatedGiftData = prevState.gifts.map(present => {
                 if (present.id === id) {
-                    present.chosen = !present.chosen
+                    return {
+                        ...present,
+                        chosen: !present.chosen
+                    }
                 }
                 return present
             })
@@ -36,8 +39,8 @@ class App extends React.Component {
         function getTotal(total, val) {
             return total + val
         }
-        this.setState(() => {
-            const activeValueArray = this.state.gifts.map(present => {
+        this.setState(prevState => {
+            const activeValueArray = prevState.gifts.map(present => {
                 let giftValue
                 if (present.chosen) {
                     giftValue = present.value
